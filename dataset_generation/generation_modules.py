@@ -160,7 +160,7 @@ class LipsDetector:
 
 class CigaretteAdder:
 
-    def __init__(self, cigarette_path='../cigarette_dataset'):
+    def __init__(self, cigarette_path='cigarette_dataset'):
         self.cigarettes = []
         for image_path in os.listdir(cigarette_path):
             cig_image = cv2.imread(os.path.join(cigarette_path, image_path), cv2.IMREAD_UNCHANGED)
